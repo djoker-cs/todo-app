@@ -1,0 +1,147 @@
+.todo-list-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f5f7;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: #5d55fa;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Add-Todo */
+.add-todo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.todo-input:focus {
+  border-color: #5d55fa;
+  outline: none;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background-color: #5d55fa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #4738d2;
+}
+
+/* To-do Items */
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.todo:hover {
+  transform: translateY(-5px);
+}
+
+/* Strikethrough */
+.strikethrough {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* To-do Text */
+.todo-text {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+/* Button Container */
+.buttons {
+  display: flex;
+}
+
+button {
+  padding: 8px 15px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+.complete-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.complete-btn:disabled {
+  background-color: #94d3a2;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.edit-btn:disabled {
+  background-color: #ffd966;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.remove-btn:disabled {
+  background-color: #f5a2a2;
+}
+
+/* No To-do */
+.no-todos {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Edit after adding To-do */
+.edit-input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.save-btn {
+  background-color: #17a2b8;
+  color: white;
+}
